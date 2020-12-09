@@ -1,0 +1,116 @@
+html, body, #root, .container{
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.row {
+  background-color: #f2f2f2;
+  border-right: #bbb solid 1px;
+}
+
+.col {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.selected {
+  background-color: #d3d3d3;
+  border-radius: 15px;
+}
+.pokemon {
+  text-align: center;
+  border: #bbb solid 1px;
+  border-radius: 0;
+}
+
+.pokemon-lineup {
+  min-height: 385px;
+  max-height: 385px;
+  overflow: auto;
+  padding: 0;
+}
+.pokemon-lineup > .row{
+  border-right: none;
+}
+
+.pokemon-data {
+  min-height: 300px;
+  max-height: 300px;
+  overflow: auto;
+}
+.pokemon-select {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.pokemon-name {
+  position: relative;
+  top: 100px;
+  right: 13%;
+}
+
+.searchbar {
+  margin-top: 25%;
+}
+
+.error-container{
+  position: relative;
+  top: -150px;
+}
+.container > .row{
+  min-height: 100%;
+}
+.pokemon-lineup, 
+.pokemon-data{
+  border: #bbb solid 1px;
+}
+.pokemon-lineup + .col{
+  border-top: #bbb solid 1px;
+}
+
+.pokemon-data .favColor{
+  width: 72% !important;
+}
+
+.pokemon-data input {
+  width: 80%;
+}
+
+.pokemon-data .row {
+  margin-top: 10px;
+}
+
+.pokemon-data select {
+  width: 30%;
+}
+.deleteMove{
+  margin-left: 20px;
+}
+
+.dropdown-menu {
+  max-height: 250px !important;
+  overflow: auto !important;
+}
+
+.moveSearch > .input-group{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.moveError-container{
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
